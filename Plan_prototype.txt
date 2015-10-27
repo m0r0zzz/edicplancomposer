@@ -1,0 +1,46 @@
+#Example plan
+Mode 0 {
+	X 400
+	Y 400
+	F 10 fps
+	t 1 min
+	Q 1
+	Flags {
+		P 5
+	}
+}
+
+Mode 1 {
+	X 400
+	Y 400
+	F 10 fps
+	t 1 min
+	Q 1
+	Flags {
+		P 4
+	}
+}
+
+Mode 2 {
+	X 400
+	Y 400
+	F 10 fps
+	t 1 min
+	Q 1
+	Flags {
+		P 3
+	}
+}
+
+Mode 3 {
+	X 400
+	Y 400
+	F 10 fps
+#	t 1 min
+	Q 1
+	Flags {
+		P 2
+	}
+}
+		
+End
