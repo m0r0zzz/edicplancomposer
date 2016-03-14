@@ -4,13 +4,13 @@
 	<Project>
 		<Option title="edicplancomposer" />
 		<Option pch_mode="2" />
-		<Option compiler="gnu_gcc_compiler_i686" />
+		<Option compiler="gcc" />
 		<Build>
 			<Target title="Debug">
 				<Option output="bin/Debug/edicplancomposer" prefix_auto="1" extension_auto="1" />
 				<Option object_output="obj/Debug/" />
 				<Option type="1" />
-				<Option compiler="gnu_gcc_compiler_i686" />
+				<Option compiler="gcc" />
 				<Option parameters="Plan_prototype.txt plan.bin" />
 				<Compiler>
 					<Add option="-pg" />
@@ -24,7 +24,7 @@
 				<Option output="bin/Release/edicplancomposer" prefix_auto="1" extension_auto="1" />
 				<Option object_output="obj/Release/" />
 				<Option type="1" />
-				<Option compiler="gnu_gcc_compiler_i686" />
+				<Option compiler="gcc" />
 				<Option parameters="Plan_prototype.txt plan.bin" />
 				<Compiler>
 					<Add option="-fexpensive-optimizations" />
@@ -38,9 +38,10 @@
 		<Compiler>
 			<Add option="-Wall" />
 			<Add option="-std=c++14" />
+			<Add option="-m32" />
 		</Compiler>
 		<Linker>
-			<Add option="-static -static-libgcc" />
+			<Add option="-m32" />
 		</Linker>
 		<Unit filename="Main.cpp" />
 		<Extensions>
